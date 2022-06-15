@@ -1,0 +1,19 @@
+{
+  "name": "movies-api-rest",
+  "version": "1.0.0",
+  "description": "API REST practice / movies app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivantdev/movies-api-rest.git"
+  },
+  "author": "@ivantdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ivantdev/movies-api-rest/issues"
+  },
+  "homepage": "https://github.com/ivantdev/movies-api-rest#readme"
+}
