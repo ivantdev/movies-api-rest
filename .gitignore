@@ -106,3 +106,7 @@ dist
 # Secrets.js (API KEY)
 
 src/secrets.js
+
+#VS code settings
+
+.vscode
