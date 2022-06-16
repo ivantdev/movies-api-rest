@@ -4,10 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ivantdev Movies</title>
-    <link rel="stylesheet" href="./style/app.css">
+    <title>Movies</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://dropi.space/font/css/all.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+    <link rel="stylesheet" href="./style/desktop.css" media="(min-width: 7680px)">
+     
 </head>
 <body>
+    <header>
+        <div class="header__logo-search">
+            <div class="header__brand">
+                <i class="header__logo fa-duotone fa-film-simple"></i>
+                <h1 class="header__brand-name">noname</h1>
+            </div>
+            <form action="" class="header__search-form">
+                <input type="text" class="search__input inactive" id="search-mobile" placeholder="type a move">
+                <button type="button" class="search__button-mobile">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <nav class="header__nav">
+            <ul class="nav__list">
+                <li class="nav__item inactive-mobile" id="li-search">
+                    <form action="" class="header__search">
+                        <button type="button">
+                            <i class="fa-regular fa-magnifying-glass"></i>
+                        </button>
+                        <input type="text" class="" id="search-desktop" placeholder="type a move">
+                    </form>
+                </li>
+                <li class="nav__item">
+                    <a href="#">
+                        <span class="nav__icon"><i class="fa-regular fa-house"></i></span>
+                        <p class="inactive-mobile">Home</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">
+                        <span class="nav__icon"><i class="fa-regular fa-arrow-trend-up"></i></span>
+                        <p class="inactive-mobile">Trending</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">
+                        <span class="nav__icon"><i class="fa-regular fa-compass"></i></span>
+                        <p class="inactive-mobile">Explore</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="#">
+                        <span class="nav__icon"><i class="fa-light fa-films"></i></span>
+                        <p class="inactive-mobile">Categories</p>
+                    </a>
+                </li>
+                <li class="nav__item inactive-mobile" id="li-account">
+                    <a href="#">
+                        <span class="nav__icon"><i class="fa-regular fa-circle-user"></i></span>
+                        <p class="inactive-mobile">Account</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+            <div class="home__primary-categories">
+                <ul class="categories">
+                    <li>
+                        <a href="#" class="category__item category__item__active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="category__item">TV Shows</a>
+                    </li>
+                    <li>
+                        <a href="#" class="category__item">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="category__item">Series</a>
+                    </li>
+                    <li>
+                        <a href="#" class="category__item">Kids</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
     <script src="./src/secrets.js"></script>
     <script src="./src/main.js"></script>
 </body>

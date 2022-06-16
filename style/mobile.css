@@ -1,0 +1,153 @@
+:root {
+    --html-bg: #232631;
+    --primary-bg: #fff;
+    --header-nav-bg2: #8e88ec;
+    --linear-bg: linear-gradient(120deg, #eb4258, #c96dde, #2cb3ea);
+    --category-soft-bg: #f4f3f0;
+
+    --btn-soft-bg: #f2f1ef;
+    --btn-purple-bg: #6D58FF;
+    --btn-white-color: rgba(255, 255, 255, 0.9);
+
+    --black-text: #191111;
+    --gray-text: #a8a8a8;
+    --white-text: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--html-bg);
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Lato", sans-serif;
+    background-color: var(--primary-bg);
+    z-index: -10;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* No display */
+
+.inactive,  .inactive-mobile {
+    display: none;
+}
+
+/* Header fixed logo and search button */
+
+.header__logo-search {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-bg);
+    z-index: 1;
+}
+
+.header__brand {
+    width: auto;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 5px;
+    font-size: 3rem;
+    color: var(--btn-purple-bg);
+}
+
+.header__brand-name {
+    font-size: 2.8rem;
+}
+
+.header__search-form {
+    margin: 0 10px;
+    margin-right: 30px;
+}
+
+.search__button-mobile {
+    height: 50px;
+    width: 50px;
+    font-size: 1.6rem;
+    background-color: var(--btn-soft-bg);
+    border: none;
+    border-radius: 50%;
+}
+
+/* header navigation fixed */
+
+.header__nav {
+    position: fixed;
+    bottom: 20px;
+    left: 4%;
+    right: 4%;
+    height: 80px;
+    color: white;
+    background: var(--linear-bg);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.nav__list {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+}
+
+.nav__icon {
+    font-size: 3rem;
+}
+
+/* Home */
+
+.home {
+    padding-top: 90px;
+}
+
+.categories {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    overflow: auto;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.category__item {
+    width:max-content;
+    margin: 0 10px;
+    padding: 8px 12px;
+    display: block;
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+.category__item__active {
+    background: var(--linear-bg);
+    color: var(--white-text);
+}
