@@ -2,7 +2,8 @@
     --html-bg: #232631;
     --primary-bg: #fff;
     --header-nav-bg2: #8e88ec;
-    --linear-bg: linear-gradient(120deg, #eb4258, #c96dde, #2cb3ea);
+    --linear-gradient-bg1: linear-gradient(120deg, #eb4258, #c96dde, #2cb3ea);
+    --linear-gradient-bg2: linear-gradient(12deg, #c96dde, #2cb3ea);
     --category-soft-bg: #f4f3f0;
 
     --btn-soft-bg: #f2f1ef;
@@ -97,7 +98,7 @@ ul {
     right: 4%;
     height: 90px;
     color: white;
-    background: var(--linear-bg);
+    background: var(--linear-gradient-bg1);
     border-radius: 20px;
     z-index: 10;
 }
@@ -108,6 +109,13 @@ ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     place-items: center;
+}
+
+.nav__button {
+    border: none;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    color: var(--white-text);
 }
 
 .nav__icon {
@@ -143,7 +151,12 @@ ul {
 }
 
 .category__item__active {
-    background: var(--linear-bg);
+    background: var(--linear-gradient-bg1);
+    color: var(--white-text);
+}
+
+.category__item-2 {
+    background: var(--linear-gradient-bg2);
     color: var(--white-text);
 }
 
@@ -252,28 +265,6 @@ ul {
     margin-top: 30px;
     font-size: 1.6rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* footer */
 

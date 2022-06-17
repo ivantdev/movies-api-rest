@@ -12,18 +12,18 @@
      
 </head>
 <body>
-    <header class="header__background-content">
-        <div class="arrow-left">
+    <header id="header" class="">
+        <div class="arrow-left inactive">
             <button type="button" class="arrow-left__button">
                 <i class="fa-solid fa-angle-left"></i>
             </button>
         </div>
-        <div class="header__logo-search inactive">
+        <div class="header__logo-search">
             <div class="header__brand">
                 <i class="header__logo fa-duotone fa-film-simple"></i>
                 <h1 class="header__brand-name">noname</h1>
             </div>
-            <form action="" class="header__search-form">
+            <form id="formHeader" action="" class="header__search-form">
                 <input type="text" class="search__input inactive" id="search-mobile" placeholder="type a move">
                 <button type="button" class="search__button-mobile">
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -34,7 +34,7 @@
 
     <nav class="header__nav">
         <ul class="nav__list">
-            <li class="nav__item inactive-mobile" id="li-search">
+            <li class="nav__item inactive" id="li-search">
                 <form action="" class="header__search">
                     <button type="button">
                         <i class="fa-regular fa-magnifying-glass"></i>
@@ -43,40 +43,34 @@
                 </form>
             </li>
             <li class="nav__item">
-                <a href="#">
+                <button type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-regular fa-house"></i></span>
-                    <p class="inactive-mobile">Home</p>
-                </a>
+                    <p class="inactive">Home</p>
+                </button>
             </li>
             <li class="nav__item">
-                <a href="#">
+                <button type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-regular fa-arrow-trend-up"></i></span>
-                    <p class="inactive-mobile">Trending</p>
-                </a>
+                    <p class="inactive">Trending</p>
+                </button>
             </li>
             <li class="nav__item">
-                <a href="#">
+                <button type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-regular fa-compass"></i></span>
-                    <p class="inactive-mobile">Explore</p>
-                </a>
+                    <p class="inactive">Discover</p>
+                </button>
             </li>
             <li class="nav__item">
-                <a href="#">
+                <button type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-light fa-films"></i></span>
-                    <p class="inactive-mobile">Categories</p>
-                </a>
-            </li>
-            <li class="nav__item inactive-mobile" id="li-account">
-                <a href="#">
-                    <span class="nav__icon"><i class="fa-regular fa-circle-user"></i></span>
-                    <p class="inactive-mobile">Account</p>
-                </a>
+                    <p class="inactive">Categories</p>
+                </button>
             </li>
         </ul>
     </nav>
 
     <main>
-        <section class="home inactive">
+        <section class="home ">
             <div class="home__primary-categories">
                 <ul class="categories">
                     <li>
@@ -97,12 +91,13 @@
                 </ul>
             </div>
             
-            <div class="home__section section__trending">
+            <div id="trendingPreviewList" class="home__section section__trending-preview">
                 <div class="section__hero">
                     <h2 class="hero__title">Trending</h2>
                     <button type="button" class="hero__button">View All</button>
                 </div>
                 <div class="section__content">
+                <!-- 
                     <div class="content__movie">
                         <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
                     </div>
@@ -115,74 +110,26 @@
                     <div class="content__movie">
                         <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg" alt="Poster movie">
                     </div>
+                -->
                 </div>
             </div>
 
-            <div class="home__secondary-categories">
+            <div id="categoriesPreviewList" class="home__secondary-categories">
                 <ul class="categories">
+                    <!--                     
                     <li>
                         <a href="#" class="category__item category__item__active">Action</a>
                     </li>
                     <li>
-                        <a href="#" class="category__item">Adventure</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Animation</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Comedy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Crime</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Documentary</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Drama</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Family</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Fantasy</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">History</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Horror</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Music</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Mystery</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Romance</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Science Fiction</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">TV Movie</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Thriller</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">War</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Western</a>
-                    </li>
+                        <a href="#" class="category__item">Adventure</a> 
+                    -->
+
                 </ul>
             </div>
 
-            <div class="home__section section__release">
+            <div class="home__section section__discover-preview">
                 <div class="section__hero">
-                    <h2 class="hero__title">New Release</h2>
+                    <h2 class="hero__title">Discover</h2>
                     <button type="button" class="hero__button">View All</button>
                 </div>
                 <div class="section__content">
@@ -201,7 +148,7 @@
                 </div>
             </div>
 
-            <div class="home__section section__series">
+            <div class="home__section section__series-preview">
                 <div class="section__hero">
                     <h2 class="hero__title">TV</h2>
                     <button type="button" class="hero__button">View All</button>
@@ -223,7 +170,7 @@
             </div>
         </section>
 
-        <section class="details">
+        <section class="details inactive">
             <div class="details__hero">
                 <h2>Top Gun: Maverick</h2>
                 <div class="details__socre-container">
@@ -260,7 +207,9 @@
         <p>Designed by CMARIX TechnoLabs.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/secrets.js"></script>
     <script src="./src/main.js"></script>
+    <script src="./src/navigation.js"></script>
 </body>
 </html>
