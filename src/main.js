@@ -68,3 +68,23 @@ async function getDiscoverMoviesPreview() {
 
     });
 }
+
+async function getTvPreview() {
+    const { data } = await api("tv/popular");
+    const shows = data.results;
+    
+    shows.forEach(show => {
+        const movieDiv = document.createElement('div');
+        movieDiv.classList.add('content__movie');
+
+        const movieImg = document.createElement('img');
+        movieImg.classList.add('movie__image');
+        movieImg.setAttribute('alt', show.title);
+        movieImg.setAttribute('src', 'https://image.tmdb.org/t/p/w300' + show.poster_path,);
+        
+        movieDiv.appendChild(movieImg);
+
+        tvPreviewList.appendChild(movieDiv);
+
+    });
+}

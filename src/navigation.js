@@ -22,6 +22,7 @@ function homePage() {
     getTrendingMoviesPreview();
     getCategoryMoviesPreview();
     getDiscoverMoviesPreview();
+    getTvPreview()
 }
 
 function trendsPage() {

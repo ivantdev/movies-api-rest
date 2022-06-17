@@ -2,6 +2,7 @@
     --html-bg: #232631;
     --primary-bg: #fff;
     --header-nav-bg2: #8e88ec;
+    --scrollbar-bg: #c96dde;
     --linear-gradient-bg1: linear-gradient(120deg, #eb4258, #c96dde, #2cb3ea);
     --linear-gradient-bg2: linear-gradient(12deg, #c96dde, #2cb3ea);
     --category-soft-bg: #f4f3f0;
@@ -301,7 +302,7 @@ footer {
 
 * {
     scrollbar-width: thin;
-    scrollbar-color: var(--btn-purple-bg) var(--btn-soft-bg);
+    scrollbar-color: var(--scrollbar-bg) var(--btn-soft-bg);
 }
 
 *::-webkit-scrollbar {
@@ -316,5 +317,5 @@ footer {
 *::-webkit-scrollbar-thumb {
     width: 1px;
     height: 1px;
-    background: var(--btn-purple-bg);
+    background: var(--scrollbar-bg);
 }
