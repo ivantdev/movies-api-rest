@@ -13,55 +13,55 @@
 </head>
 <body>
     <header id="header" class="">
-        <div class="arrow-left inactive">
+        <div id="arrow-back" class="arrow-left inactive">
             <button type="button" class="arrow-left__button">
                 <i class="fa-solid fa-angle-left"></i>
             </button>
         </div>
-        <div class="header__logo-search">
+        <div id="headerLogoSearch" class="header__logo-search">
             <div class="header__brand">
                 <i class="header__logo fa-duotone fa-film-simple"></i>
-                <h1 class="header__brand-name">noname</h1>
+                <h1 id="brandName" class="header__brand-name">noname</h1>
             </div>
             <form id="formHeader" action="" class="header__search-form">
                 <input type="text" class="search__input inactive" id="search-mobile" placeholder="type a move">
-                <button type="button" class="search__button-mobile">
+                <button id="headerSearchButton" type="button" class="header__search-button">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
         </div>
     </header>
 
-    <nav class="header__nav">
+    <nav id="nav" class="header__nav">
         <ul class="nav__list">
             <li class="nav__item inactive" id="li-search">
                 <form action="" class="header__search">
-                    <button type="button">
+                    <button id="navSearchButton" type="button">
                         <i class="fa-regular fa-magnifying-glass"></i>
                     </button>
                     <input type="text" class="" id="search-desktop" placeholder="type a move">
                 </form>
             </li>
             <li class="nav__item">
-                <button type="button" class="nav__button">
+                <button id="navHomeButton" type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-regular fa-house"></i></span>
                     <p class="inactive">Home</p>
                 </button>
             </li>
             <li class="nav__item">
-                <button type="button" class="nav__button">
+                <button id="navTrendingButton" type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-regular fa-arrow-trend-up"></i></span>
                     <p class="inactive">Trending</p>
                 </button>
             </li>
             <li class="nav__item">
-                <button type="button" class="nav__button">
+                <button id="navDiscoverButton" type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-regular fa-compass"></i></span>
                     <p class="inactive">Discover</p>
                 </button>
             </li>
             <li class="nav__item">
-                <button type="button" class="nav__button">
+                <button id="navCategoriesButton" type="button" class="nav__button">
                     <span class="nav__icon"><i class="fa-light fa-films"></i></span>
                     <p class="inactive">Categories</p>
                 </button>
@@ -70,23 +70,17 @@
     </nav>
 
     <main>
-        <section class="home ">
+        <section id="sectionHome" class="home">
             <div class="home__primary-categories">
                 <ul class="categories">
                     <li>
-                        <a href="#" class="category__item category__item__active">Home</a>
+                        <button id="sectionHomeButton" type="button" class="category__item category__item__active">Home</button>
                     </li>
                     <li>
-                        <a href="#" class="category__item">TV Shows</a>
+                        <button id="sectionMoviesButton" type="button" class="category__item">Movies</button>
                     </li>
                     <li>
-                        <a href="#" class="category__item">Movies</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Series</a>
-                    </li>
-                    <li>
-                        <a href="#" class="category__item">Kids</a>
+                        <button id="sectionTvButton" type="button" class="category__item">TV Shows</button>
                     </li>
                 </ul>
             </div>
@@ -96,7 +90,7 @@
                     <h2 class="hero__title">Trending</h2>
                     <button type="button" class="hero__button">View All</button>
                 </div>
-                <div class="section__content">
+                <div class="section__container">
                 <!-- 
                     <div class="content__movie">
                         <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
@@ -127,12 +121,12 @@
                 </ul>
             </div>
 
-            <div class="home__section section__discover-preview">
+            <div id="discoverPreviewList" class="home__section section__discover-preview">
                 <div class="section__hero">
                     <h2 class="hero__title">Discover</h2>
                     <button type="button" class="hero__button">View All</button>
                 </div>
-                <div class="section__content">
+                <div class="section__container">
                     <div class="content__movie">
                         <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
                     </div>
@@ -148,12 +142,12 @@
                 </div>
             </div>
 
-            <div class="home__section section__series-preview">
+            <div id="tvPreviewList" class="home__section section__tv-preview">
                 <div class="section__hero">
                     <h2 class="hero__title">TV</h2>
                     <button type="button" class="hero__button">View All</button>
                 </div>
-                <div class="section__content">
+                <div class="section__container">
                     <div class="content__movie">
                         <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
                     </div>
@@ -170,15 +164,15 @@
             </div>
         </section>
 
-        <section class="details inactive">
-            <div class="details__hero">
+        <section id="sectionDetails" class="details inactive">
+            <div id="detailsHero" class="details__hero">
                 <h2>Top Gun: Maverick</h2>
                 <div class="details__socre-container">
                     <i class="star fa-solid fa-star"></i>
                     <span class="score">9.6</span>
                 </div>
             </div>
-            <p class="detail__description">Top Gun: Maverick es una película de acción y drama estadounidense de 2022 dirigida por Joseph Kosinski, secuela de la película de 1986 Top Gun. Se estrenó el 27 de mayo de 2022 en Estados Unidos.</p>
+            <p id="detailsDescription" class="detail__description">Top Gun: Maverick es una película de acción y drama estadounidense de 2022 dirigida por Joseph Kosinski, secuela de la película de 1986 Top Gun. Se estrenó el 27 de mayo de 2022 en Estados Unidos.</p>
 
             <div class="home__section section__similar">
                 <div class="section__hero">
@@ -200,6 +194,33 @@
                 </div>
             </div>
         </section>
+
+        <section id="sectionGeneral" class="general-list inactive">
+            <div id="generalTitle" class="general__hero">
+                <h2 class="general__title">Some Title</h2>
+                <p class="general__aux-text"></p>
+            </div>
+            <div id="generalContainer" class="general__container">
+                <div class="content__movie">
+                    <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
+                </div>
+                <div class="content__movie">
+                    <img class="movie__image" src="https://image.tmdb.org/t/p/w220_and_h330_face/cdkyMYdu8ao26XOBvilNzLneUg1.jpg" alt="Poster movie">
+                </div>
+                <div class="content__movie">
+                    <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
+                </div>
+                <div class="content__movie">
+                    <img class="movie__image" src="https://image.tmdb.org/t/p/w220_and_h330_face/cdkyMYdu8ao26XOBvilNzLneUg1.jpg" alt="Poster movie">
+                </div>
+                <div class="content__movie">
+                    <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
+                </div>
+                <div class="content__movie">
+                    <img class="movie__image" src="https://image.tmdb.org/t/p/w220_and_h330_face/cdkyMYdu8ao26XOBvilNzLneUg1.jpg" alt="Poster movie">
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -209,6 +230,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/secrets.js"></script>
+    <script src="./src/node.js"></script>
     <script src="./src/main.js"></script>
     <script src="./src/navigation.js"></script>
 </body>
