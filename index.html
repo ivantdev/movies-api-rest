@@ -8,12 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://dropi.space/font/css/all.css">
     <link rel="stylesheet" href="./style/mobile.css">
-    <link rel="stylesheet" href="./style/desktop.css" media="(min-width: 7680px)">
+    <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 768px)">
      
 </head>
 <body>
-    <header>
-        <div class="header__logo-search">
+    <header class="header__background-content">
+        <div class="arrow-left">
+            <button type="button" class="arrow-left__button">
+                <i class="fa-solid fa-angle-left"></i>
+            </button>
+        </div>
+        <div class="header__logo-search inactive">
             <div class="header__brand">
                 <i class="header__logo fa-duotone fa-film-simple"></i>
                 <h1 class="header__brand-name">noname</h1>
@@ -25,52 +30,53 @@
                 </button>
             </form>
         </div>
-        <nav class="header__nav">
-            <ul class="nav__list">
-                <li class="nav__item inactive-mobile" id="li-search">
-                    <form action="" class="header__search">
-                        <button type="button">
-                            <i class="fa-regular fa-magnifying-glass"></i>
-                        </button>
-                        <input type="text" class="" id="search-desktop" placeholder="type a move">
-                    </form>
-                </li>
-                <li class="nav__item">
-                    <a href="#">
-                        <span class="nav__icon"><i class="fa-regular fa-house"></i></span>
-                        <p class="inactive-mobile">Home</p>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">
-                        <span class="nav__icon"><i class="fa-regular fa-arrow-trend-up"></i></span>
-                        <p class="inactive-mobile">Trending</p>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">
-                        <span class="nav__icon"><i class="fa-regular fa-compass"></i></span>
-                        <p class="inactive-mobile">Explore</p>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#">
-                        <span class="nav__icon"><i class="fa-light fa-films"></i></span>
-                        <p class="inactive-mobile">Categories</p>
-                    </a>
-                </li>
-                <li class="nav__item inactive-mobile" id="li-account">
-                    <a href="#">
-                        <span class="nav__icon"><i class="fa-regular fa-circle-user"></i></span>
-                        <p class="inactive-mobile">Account</p>
-                    </a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
+    <nav class="header__nav">
+        <ul class="nav__list">
+            <li class="nav__item inactive-mobile" id="li-search">
+                <form action="" class="header__search">
+                    <button type="button">
+                        <i class="fa-regular fa-magnifying-glass"></i>
+                    </button>
+                    <input type="text" class="" id="search-desktop" placeholder="type a move">
+                </form>
+            </li>
+            <li class="nav__item">
+                <a href="#">
+                    <span class="nav__icon"><i class="fa-regular fa-house"></i></span>
+                    <p class="inactive-mobile">Home</p>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#">
+                    <span class="nav__icon"><i class="fa-regular fa-arrow-trend-up"></i></span>
+                    <p class="inactive-mobile">Trending</p>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#">
+                    <span class="nav__icon"><i class="fa-regular fa-compass"></i></span>
+                    <p class="inactive-mobile">Explore</p>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a href="#">
+                    <span class="nav__icon"><i class="fa-light fa-films"></i></span>
+                    <p class="inactive-mobile">Categories</p>
+                </a>
+            </li>
+            <li class="nav__item inactive-mobile" id="li-account">
+                <a href="#">
+                    <span class="nav__icon"><i class="fa-regular fa-circle-user"></i></span>
+                    <p class="inactive-mobile">Account</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="home">
+        <section class="home inactive">
             <div class="home__primary-categories">
                 <ul class="categories">
                     <li>
@@ -112,7 +118,7 @@
                 </div>
             </div>
 
-            <div class="home__primary-categories">
+            <div class="home__secondary-categories">
                 <ul class="categories">
                     <li>
                         <a href="#" class="category__item category__item__active">Action</a>
@@ -174,7 +180,7 @@
                 </ul>
             </div>
 
-            <div class="home__section section__trending">
+            <div class="home__section section__release">
                 <div class="section__hero">
                     <h2 class="hero__title">New Release</h2>
                     <button type="button" class="hero__button">View All</button>
@@ -195,10 +201,41 @@
                 </div>
             </div>
 
-            <div class="home__section section__trending">
+            <div class="home__section section__series">
                 <div class="section__hero">
                     <h2 class="hero__title">TV</h2>
                     <button type="button" class="hero__button">View All</button>
+                </div>
+                <div class="section__content">
+                    <div class="content__movie">
+                        <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/wxP2Mzv9CdjOK6t4dNnFGqIQl0V.jpg" alt="Poster movie">
+                    </div>
+                    <div class="content__movie">
+                        <img class="movie__image" src="https://image.tmdb.org/t/p/w220_and_h330_face/cdkyMYdu8ao26XOBvilNzLneUg1.jpg" alt="Poster movie">
+                    </div>
+                    <div class="content__movie">
+                        <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/74xTEgt7R36Fpooo50r9T25onhq.jpg" alt="Poster movie">
+                    </div>
+                    <div class="content__movie">
+                        <img class="movie__image" src="https://www.themoviedb.org/t/p/w220_and_h330_face/kAVRgw7GgK1CfYEJq8ME6EvRIgU.jpg" alt="Poster movie">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="details__hero">
+                <h2>Top Gun: Maverick</h2>
+                <div class="details__socre-container">
+                    <i class="star fa-solid fa-star"></i>
+                    <span class="score">9.6</span>
+                </div>
+            </div>
+            <p class="detail__description">Top Gun: Maverick es una película de acción y drama estadounidense de 2022 dirigida por Joseph Kosinski, secuela de la película de 1986 Top Gun. Se estrenó el 27 de mayo de 2022 en Estados Unidos.</p>
+
+            <div class="home__section section__similar">
+                <div class="section__hero">
+                    <h2 class="hero__title">Similar</h2>
                 </div>
                 <div class="section__content">
                     <div class="content__movie">
