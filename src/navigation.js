@@ -21,6 +21,7 @@ function navigator() {
 function homePage() {
     getTrendingMoviesPreview();
     getCategoryMoviesPreview();
+    getDiscoverMoviesPreview();
 }
 
 function trendsPage() {

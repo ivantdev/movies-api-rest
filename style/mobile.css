@@ -291,9 +291,30 @@ footer {
     z-index: 0;
 }
 
-
 /* No display */
 
 .inactive,  .inactive-mobile {
     display: none;
+}
+
+/* scrollbar */
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--btn-purple-bg) var(--btn-soft-bg);
+}
+
+*::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--btn-soft-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 1px;
+    height: 1px;
+    background: var(--btn-purple-bg);
 }

@@ -48,3 +48,23 @@ async function getCategoryMoviesPreview() {
 
     });
 }
+
+async function getDiscoverMoviesPreview() {
+    const { data } = await api("discover/movie");
+    const movies = data.results;
+    
+    movies.forEach(movie => {
+        const movieDiv = document.createElement('div');
+        movieDiv.classList.add('content__movie');
+
+        const movieImg = document.createElement('img');
+        movieImg.classList.add('movie__image');
+        movieImg.setAttribute('alt', movie.title);
+        movieImg.setAttribute('src', 'https://image.tmdb.org/t/p/w300' + movie.poster_path,);
+        
+        movieDiv.appendChild(movieImg);
+
+        discoverPreviewList.appendChild(movieDiv);
+
+    });
+}

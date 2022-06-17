@@ -19,9 +19,13 @@ const sectionHomeButton = document.querySelector('#sectionHomeButton');
 const sectionMoviesButton = document.querySelector('#sectionMoviesButton');
 const sectionTvButton = document.querySelector('#sectionTvButton');
 const trendingPreviewList = document.querySelector('#trendingPreviewList .section__container');
+const trendingPreviewButton = document.querySelector('#trendingPreviewList .hero__button');
 const categoriesPreviewList = document.querySelector('#categoriesPreviewList .categories');
+const categoriesPreviewButton = document.querySelector('#categoriesPreviewList .hero__button');
 const discoverPreviewList = document.querySelector('#discoverPreviewList .section__container');
+const discoverPreviewButton = document.querySelector('#discoverPreviewList .hero__button');
 const tvPreviewList = document.querySelector('#tvPreviewList .section__container');
+const tvPreviewButton = document.querySelector('#tvPreviewList .hero__button');
 
 // nodes for section movie details
 const sectionDetails = document.querySelector('#sectionDetails');
