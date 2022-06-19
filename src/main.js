@@ -196,4 +196,6 @@ async function getQuery(query) {
     const shows = data_tv.results;
     console.log(shows);
     addMovies(shows, generalContent, tv=true, clean=false);
+
+    generalTitle.textContent += ` (${shows.length + movies.length})`;
 }
