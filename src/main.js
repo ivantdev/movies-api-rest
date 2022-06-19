@@ -181,17 +181,19 @@ async function getSimilarTvShow(id) {
 async function getQuery(query) {
     const { data: data_movies } = await api('search/movie', {
         params: {
-            query,
+            query: encodeURI(query),
         },
     });
     const movies = data_movies.results;
+    console.log(movies);
     addMovies(movies, generalContent);
 
     const { data: data_tv } = await api('search/tv', {
         params: {
-            query,
+            query: encodeURI(query),
         },
     });
     const shows = data_tv.results;
+    console.log(shows);
     addMovies(shows, generalContent, tv=true, clean=false);
 }

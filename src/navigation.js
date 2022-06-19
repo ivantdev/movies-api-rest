@@ -280,7 +280,7 @@ function searchPage() {
     sectionGeneral.classList.add('noheader');
 
     const query = location.hash.split('=')[1];
-    generalTitle.textContent = 'Results for: ' + query;
+    generalTitle.textContent = 'Results for: ' + decodeURI(query);
 
     getQuery(query);
     window.scrollTo(0,0);
