@@ -184,7 +184,7 @@ ul {
 .home__section {
     width: 100%;
     height: auto;
-    margin: 30px auto;
+    padding: 30px 0;
 }
 
 .section__hero {
