@@ -1,2 +1,1 @@
-# movies-api-rest
-API REST practice / movies app
+# Movies - Consulta series y películas
